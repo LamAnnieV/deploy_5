@@ -156,11 +156,13 @@ Alarms allow you to set thresholds in CloudWatch, which will notify you when tho
 
 ## Step #7 Configure Jenkins Build and Run Build
 
-**"deploy_5" Build**
+Please refer to the diagram [here](Images/GitHub_Diagram.drawio.png) for the repository edits, commits, and Jenkins build run process.
+
+**"deploy_5v1" Build**
 
 [Create Jenkins Multibranch Pipeline Build](https://github.com/LamAnnieV/Jenkins/blob/main/Jenkins_Multibranch_Pipeline_Build.md)
 
-Jenkins Build:  In Jenkins create a build "deploy_5" for the Banking application from GitHub Repository [https://github.com/LamAnnieV/deployment_4.git](https://github.com/LamAnnieV/deploy_5.git) and run the build.  This build consists of four stages:  The Build, the Test, the Clean, and the Deploy stages.
+Jenkins Build:  In Jenkins create a build "deploy_5v1" to run the file Jenkinsfilev1 for the Banking application from GitHub Repository [https://github.com/LamAnnieV/deployment_4.git](https://github.com/LamAnnieV/deploy_5.git) and run the build.  This build consists of:  The Build, the Test, the Clean, and the Deploy stages.
 
 Please refer back to "Edit to the Jenkinsfilev1" and "Edit to the setup.sh" above for changes.
 
@@ -178,7 +180,9 @@ This image shows the CPU utilization of the Jenkins server under a stress test. 
 
 **The Jenkinsfilev2 was ran as a different build under the name "deploy_5.1"**
 
-Jenkins build "deploy_5" was successful:
+Jenkins Build:  In Jenkins create a build "deploy_5v52" to run the file Jenkinsfilev2 for the Banking application from GitHub Repository [https://github.com/LamAnnieV/deployment_4.git](https://github.com/LamAnnieV/deploy_5.git) and run the build.  This build consists of the Clean and the Deploy stages.
+
+Jenkins build "deploy_5v2" was successful, however launching for the second branch does not reflect the changes made in home.html
 
 Please refer back to "Edit to the Jenkinsfilev2" and "Edit to the setup2.sh" above for changes.
 

@@ -64,26 +64,6 @@ Update the working directory to deploy_5
 
 For the purpose of testing the second build, make updates to [home.html](Images/home.html_edit.png) file.
 
-**Edit to the Jenkinsfilev1**
-
-![File](Images/Jenkinsfilev1.png)
-
-**Edit to the setup.sh**
-
-![File](Images/setup_sh.png)
-
-**Edit to the Jenkinsfilev2**
-
-![File](Images/Jenkinsfilev2.png)
-
-**Edit to the setup2.sh**
-
-![File](Images/setup2_sh.png)
-
-**Edit to a HTML file**
-
-![File](Images/html_edit.png)
-
 In order for the EC2 instance, where Jenkins is installed, to access the repository, you need to generate a token from GitHub and then provide it to the EC2 instance.
 
 [Generate GitHub Token](https://github.com/LamAnnieV/GitHub/blob/main/Generate_GitHub_Token.md)

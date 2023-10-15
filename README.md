@@ -20,25 +20,25 @@ Previously, we manually built, tested, and deployed our web application on a sin
 
 GitHub serves as the repository from which Jenkins retrieves files to build, test, and deploy the URL Shortener application.
 
-**Jenkinsfilev1 - Initial Deployment:**
+**Changes in the repository for Jenkins Build Deploy_5v1**
 
-In this deployment, we need to make edits to the Jenkinsfilev1 "Deploy" block to achieve the following tasks:
+In this deployment, we need to make edits to the Jenkinsfilev1 ["Deploy"](Images/Jenkinsfilev1.png) block to achieve the following tasks:
 
 ```
 Securely copy the file "setup.sh" from the Jenkins Server to the Application Server.
 SSH into the Application server.
 Run the "setup.sh" script in the Application server.
 ```
-In the setup.sh file, make the following updates:
+In the [setup.sh](Images/setup_sh.png) file, make the following updates:
 
 ```
 Clone the repository from https://github.com/LamAnnieV/deploy_5.git.
 Change the working directory to the correct location of the locally cloned repository.
 ```
 
-**Jenkinsfilev2 - Subsequent Deployment:**
+**Changes in the repository for Jenkins Build Deploy_5v2**
 
-After successfully deploying the application, edit the Jenkinsfilev2 "Clean" block to perform the following actions:
+After successfully deploying the application, edit the Jenkinsfilev2 ["Clean"](Images/Jenkinsfilev2.png) block to perform the following actions:
 
 ```
 Securely copy the file "pkill.sh" from the Jenkins Server to the Application Server.
@@ -46,7 +46,7 @@ SSH into the Application server.
 Run the "pkill.sh" script.
 ```
 
-Edit the Jenkinsfilev2 "Deploy" block to perform the following actions:
+Edit the Jenkinsfilev2 ["Deploy"](Images/Jenkinsfilev2.png) block to perform the following actions:
 
 ```
 Securely copy the file "setup.sh" from the Jenkins Server to the Application Server.
@@ -54,7 +54,7 @@ SSH into the Application server.
 Run the "setup.sh" script in the Application server.
 ```
 
-Update the "setup2.sh" file to:
+Update the ["setup2.sh"](Images/setup_sh.png) file to:
 
 ```
 Delete the previous repository, deploy_5
@@ -62,7 +62,7 @@ Clone the repository from https://github.com/LamAnnieV/deploy_5.git.
 Update the working directory to deploy_5
 ```
 
-For the purpose of testing the second build, make updates to an HTML file.
+For the purpose of testing the second build, make updates to [home.html](Images/home.html_edit.png) file.
 
 **Edit to the Jenkinsfilev1**
 

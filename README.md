@@ -178,13 +178,13 @@ This image shows the CPU utilization of the Jenkins server under a stress test. 
 
 ![image](Images/Jenkins_CloudWatch.png)
 
-**The Jenkinsfilev2 was ran as a different build under the name "deploy_5.1"**
+**The Jenkinsfilev2 was ran as a different build under the name "deploy_5v2"**
 
-Jenkins Build:  In Jenkins create a build "deploy_5v52" to run the file Jenkinsfilev2 for the Banking application from GitHub Repository [https://github.com/LamAnnieV/deployment_4.git](https://github.com/LamAnnieV/deploy_5.git) and run the build.  This build consists of the Clean and the Deploy stages.
+Jenkins Build:  In Jenkins create a build "deploy_5v1" to run the file Jenkinsfilev1 for the Banking application from GitHub Repository [https://github.com/LamAnnieV/deployment_4.git](https://github.com/LamAnnieV/deploy_5.git) and run the build.  This build consists of the Clean and the Deploy stages.
 
-Jenkins build "deploy_5v2" was successful, however launching for the second branch does not reflect the changes made in home.html
+Jenkins build "deploy_5v2" was successful, however launching of the second branch does not reflect the changes made in home.html.  After merging the second branch to the main branch the website was launched reflected the changes made in the file home.html
 
-Please refer back to "Edit to the Jenkinsfilev2" and "Edit to the setup2.sh" above for changes.
+Please refer back to edit to the Jenkinsfilev2,  edit to the setup2.sh" above for changes.
 
 **Result**
 

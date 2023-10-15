@@ -160,7 +160,7 @@ This image shows the CPU utilization of the Jenkins server under a stress test. 
 
 **The Jenkinsfilev2 was ran as a different build under the name "deploy_5v2"**
 
-Jenkins Build:  In Jenkins create a build "deploy_5v1" to run the file Jenkinsfilev1 for the Banking application from GitHub Repository [https://github.com/LamAnnieV/deployment_4.git](https://github.com/LamAnnieV/deploy_5.git) and run the build.  This build consists of the Clean and the Deploy stages.
+Jenkins Build:  In Jenkins create a build "deploy_5v1" to run the file Jenkinsfilev1 for the Banking application from GitHub Repository [https://github.com/LamAnnieV/deployment_4.git](https://github.com/LamAnnieV/deploy_5.git) and run the build.  This build consists of the Clean and the Deploy stages.  Jenkinsfilev1 primarily serves the purpose of testing, ensuring that new code changes and configurations work as intended. Conversely, Jenkinsfilev2 is typically associated with the staging or production environment. The decision to separate them is driven by best practices in software development and deployment.
 
 Jenkins build "deploy_5v2" was successful, however launching of the second branch does not reflect the changes made in home.html.  After merging the second branch to the main branch the website was launched reflected the changes made in the file home.html
 
@@ -186,7 +186,7 @@ Most of the challenges revolved around the development process, including writin
 
 As observed in the CloudWatch images, even when both servers were subjected to 'sudo stress-ng --matrix 1 -t 1m' while simultaneously running Jenkins builds, the CPU usage exceeded 20%, although it remained below 30%. This performance level is adequate as long as the servers are not consistently stressed, do not require more than 2 CPUs, and do not experience a substantial surge in requests. Nonetheless, it's advisable to explore options for additional resources as a precaution.
 
-In this deployment, two instances are employed: one for the Jenkins server and the other for the Web application server. Both instances are placed in the public subnet, as they need to be accessible via the internet. The Jenkins server is accessible through port 8080 for utilizing the Jenkins GUI interface, while the application server is accessible by our banking customers through port 8000. Thus, both subnets must remain public for these connections to function as required.
+In this deployment, two instances are employed: one for the Jenkins server and the other server is for the web tier. Both instances are placed in the public subnet, as they need to be accessible via the internet. The Jenkins server is accessible through port 8080 for utilizing the Jenkins GUI interface, while the application server is accessible by our banking customers through port 8000. Thus, both subnets must remain public for these connections to function as required.  However, if we pull out the application tier and database tier into their own server, then that server can be on the private subnet.
   
 ## Area(s) for Optimization:
 

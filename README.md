@@ -90,7 +90,7 @@ Jenkins is used to automate the Build, Test, and Deploy the Banking Application.
 
 
 
-## Step #4 Establish an SSH Connection from the Jenkins Server to the Application Server
+## Step #4 Establish a SSH Connection from the Jenkins Server to the Application Server
 
 While the Jenkins Server initiates the deployment process for the application, it does not perform the deployment itself. Instead, it establishes an SSH connection to the application server and runs a script to deploy the application. To accomplish this, an SSH connection is established using a Jenkins User account.
  

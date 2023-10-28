@@ -88,6 +88,19 @@ To automate the construction of the application infrastructure, employ an instan
 
 Jenkins is used to automate the Build, Test, and Deploy the Banking Application.  To use Jenkins in a new EC2, all the proper installs to use Jenkins and to read the programming language that the application is written in need to be installed. In this case, they are Jenkins, Java, and Jenkins additional plugin "Pipeline Keep Running Step", which is manually installed through the GUI interface.
 
+**Results:**
+
+Success Build for all Stages
+
+![Image](Images/Jenkins.png)
+
+The application was launched from all four instances:
+
+![Image](Images/Lanch_1.png)
+![Image](Images/Lanch_2.png)
+![Image](Images/Lanch_3.png)
+![Image](Images/Lanch_4.png)
+
 
 
 ## Step #4 Establish a SSH Connection from the Jenkins Server to the Application Server
